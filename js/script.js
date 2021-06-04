@@ -1,7 +1,6 @@
-var pokemonList = { name1:'Balbasur', name2:'Ivysaur', name3:'Venusaur'};
-
-let Balbasur =[{ type: 'grass-poison', height: 0.7 , color: 'blue'}];
-let Ivysaur =[{type: 'grass-poison', height:1, color:'lightblue'}];
-let Venusaur =[{type:'grass-poison', height:2, color:'lila'}];
+let pokemonList = [{name:'Bulbasaur', height:0.7, types: ['grass', 'poison']}];
+pokemonList[1]= {name:'Venusaur', height:1, types:['seed', 'overgrown']};
+pokemonList[2]= {name:'', height:2, types:['fire']};
+pokemonList[3]= {name:'pepito', height:3, types:['fire','water']};
 
 console.log(pokemonList);
