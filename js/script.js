@@ -7,43 +7,43 @@ console.log(pokemonList);
 
 document.write ('Balbasaur, ', 'Venusaur, ', 'Charmander, ','Caterpie. ');
 
-let pokemons = ['Balbasaur', 'Venusaur', 'Charmander','Caterpie']
+let pokemonsList = []//'Balbasaur', 'Venusaur', 'Charmander','Caterpie'
 let text = '';
 let i = 0;
-for (;pokemons [i];){
-  text = text + '' + pokemons[i];
+for (;pokemonList [i];){
+  text = text + '' + pokemonsList[i];
   i++;
 }
 console.log(text);
 
-let pokemon0 ={name:'Bulbasaur', height: 0.7}
-if (pokemon0.height > 1.8){
+let Balbasaur = []
+if (pokemonList[0].height > 1.8){
 console.log ('this is a big pokemon')
-}else if (pokemon0.height > 0.5 && pokemon0.height <1.8){
+}else if (pokemonList.height > 0.5 && pokemonList.height <1.8){
   console.log('this is an average pokemon')
 } else {
 console.log ('this is a small pokemon')}
 
-let pokemon1 ={name:'Venusaur', height: 1}
-if (pokemon1.height > 1.8){
+let Venusaur =[]
+if (pokemonList[1].height > 1.8){
 console.log ('this is a big pokemon, Wow that is big!')
-}else if (pokemon1.height > 0.5 && pokemon1.height <1.8){
+}else if (pokemonList[1].height > 0.5 && pokemonList[1].height <1.8){
   console.log('this is an average pokemon')
 } else {
 console.log ('this is a small pokemon')}
 
-let pokemon2 ={name:'Charmander', height: 2}
-if (pokemon2.height > 1.8){
+let Charmander = []//{name:'Charmander', height: 2}
+if (pokemonList[2].height > 1.8){
 console.log ('this is a big pokemon, Wow that is big!')
-}else if (pokemon2.height > 0.5 && pokemon2.height <1.8){
+}else if (pokemonList[2].height > 0.5 && pokemonList[2].height <1.8){
   console.log('this is an average pokemon')
 } else {
 console.log ('this is a small pokemon')}
 
-let pokemon3 ={name:'Caterpie', height: 0.3}
-if (pokemon3.height > 1.8){
+let Caterpie = [] //{name:'Caterpie', height: 0.3}
+if (pokemonList[3].height > 1.8){
 console.log ('this is a big pokemon, Wow that is big!')
-}else if (pokemon3.height > 0.5 && pokemon3.height <1.8){
+}else if (pokemonList[3].height > 0.5 && pokemonList[3].height <1.8){
   console.log('this is an average pokemon')
 } else {
 console.log ('this is a small pokemon')}
