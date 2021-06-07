@@ -14,12 +14,12 @@ for (;pokemonList [i];){
   text = text + '' + pokemonsList[i];
   i++;
 }
-console.log(text);
+console.log('Balbasaur height:0.7 - Venusaur height:1 - Charmender height:2 - Caterpie height:0.3');
 
 let Balbasaur = []
 if (pokemonList[0].height > 1.8){
 console.log ('this is a big pokemon')
-}else if (pokemonList.height > 0.5 && pokemonList.height <1.8){
+}else if (pokemonList[0].height > 0.5 && pokemonList[0].height <1.8){
   console.log('this is an average pokemon')
 } else {
 console.log ('this is a small pokemon')}
