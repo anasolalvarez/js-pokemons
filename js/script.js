@@ -16,27 +16,27 @@ let pokemonList = [{
   types: ['fire', 'water']
 }];
 
-let pokemonList2 = [{
-  name: 'Kakuna',
-  height: 0.6,
-  types: ['flying', 'psychic']
-}, {
-  name: 'Blastoise',
-  height: 1.6,
-  types: ['grass', 'electric']
-}, {
-  name: 'Rattata',
-  height: 0.3,
-  types: ['fighting', 'ghost']
-}, {
-  name: 'Nidoking',
-  height: 1.4,
-  types: ['psychic', 'water']
-}];
+// let pokemonList2 = [{
+//   name: 'Kakuna',
+//   height: 0.6,
+//   types: ['flying', 'psychic']
+// }, {
+//   name: 'Blastoise',
+//   height: 1.6,
+//   types: ['grass', 'electric']
+// }, {
+//   name: 'Rattata',
+//   height: 0.3,
+//   types: ['fighting', 'ghost']
+// }, {
+//   name: 'Nidoking',
+//   height: 1.4,
+//   types: ['psychic', 'water']
+// }];
 
 console.log(pokemonList);
 
-document.write('Balbasaur, ', 'Venusaur, ', 'Charmander, ', 'Caterpie. ');
+// document.write('Balbasaur, ', 'Venusaur, ', 'Charmander, ', 'Caterpie. ');
 
 
 // let pokemonsList = [] //'Balbasaur', 'Venusaur', 'Charmander','Caterpie'
@@ -50,13 +50,14 @@ document.write('Balbasaur, ', 'Venusaur, ', 'Charmander, ', 'Caterpie. ');
 
 for (let i = 0; i < pokemonList.lenght; i++) {
   if (pokemonList[i].height > 1.8){
-    console.log(pokemonList[i].name + 'Wow that is big');
+    document.write(pokemonList[i].name + 'Wow,that\'s big!');
   } else if (pokemonList.height > 0.5 && pokemonList.height < 1.8){
-    console.log(pokemonList[i].name +'this is an average pokemon');
+    document.write(pokemonList[i].name +'this is an average pokemon');
   } else {
-    console.log(pokemonList[i].name +'this is a small pokemon');
+    document.write(pokemonList[i].name +'this is a small pokemon');
   }
 }
+
 
 // let Venusaur = [];
 // if (pokemonList[1].height > 1.8) {
