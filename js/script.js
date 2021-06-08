@@ -85,7 +85,3 @@ for (let i = 0; i < pokemonList.lenght; i++) {
 // } else {
 //   console.log('this is a small pokemon')
 // }
-
-//let pokemonList2 = [
-// different set of Pokémon objects
-//];
