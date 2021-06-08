@@ -4,7 +4,7 @@ let pokemonList = [{
   types: ['grass', 'poison']
 }, {
   name: 'Venusaur',
-  height: 1,
+  height: 3,
   types: ['seed', 'overgrown']
 }, {
   name: 'Charmander',
@@ -15,6 +15,8 @@ let pokemonList = [{
   height: 0.3,
   types: ['fire', 'water']
 }];
+
+console.log(pokemonList);
 
 // let pokemonList2 = [{
 //   name: 'Kakuna',
@@ -33,30 +35,50 @@ let pokemonList = [{
 //   height: 1.4,
 //   types: ['psychic', 'water']
 // }];
-
-console.log(pokemonList);
+//
+// console.log(pokemonList2);
 
 // document.write('Balbasaur, ', 'Venusaur, ', 'Charmander, ', 'Caterpie. ');
 
 
-// let pokemonsList = [] //'Balbasaur', 'Venusaur', 'Charmander','Caterpie'
-// let text = '';
-// let i = 0;
-// for (; pokemonList[i];) {
-//   text = text + '' + pokemonsList[i];
-//   i++;
-// }
-// console.log('Balbasaur height:0.7 - Venusaur height:1 - Charmender height:2 - Caterpie height:0.3');
-
-for (let i = 0; i < pokemonList.lenght; i++) {
+for (let i = 0; i < pokemonList.length; i++) {
   if (pokemonList[i].height > 1.8){
-    document.write(pokemonList[i].name + 'Wow,that\'s big!');
-  } else if (pokemonList.height > 0.5 && pokemonList.height < 1.8){
-    document.write(pokemonList[i].name +'this is an average pokemon');
+    document.write(pokemonList[i].name +' height ' +pokemonList[i].height+  "   Wow that's big" + '<br>');
+  } else if (pokemonList[i].height > 0.5 && pokemonList[i].height < 1.8){
+    document.write(pokemonList[i].name +' height ' + pokemonList[i].height + '  this is an average pokemon' +'<br>');
   } else {
-    document.write(pokemonList[i].name +'this is a small pokemon');
+    document.write(pokemonList[i].name + ' height '+pokemonList[i].height + '  this is a small pokemon' + '<br>');
   }
-}
+};
+
+// function printArrayDetails (List) {
+//   for (let i = 0; 0 < List.length; i++){
+//     document.write ('<p>' + List[i].name + '</p>')
+//     console.log (List[i].name);
+//   }
+// }
+//
+// printArrayDetails (pokemonList);
+// printArrayDetails (pokemonList2);
+//
+//
+// function divide(dividend, divisor){
+//   if(divisor === 0){
+//     return "You’re trying to divide by zero."
+//   }else{
+//     let result = dividend / divisor;
+//     return result;
+//   }
+// }
+//
+// console.log(divide(4, 2));
+// console.log(divide(7, 0));
+// console.log(divide(1, 4));
+// console.log(divide(12, -3));
+
+
+
+
 
 
 // let Venusaur = [];
@@ -85,3 +107,7 @@ for (let i = 0; i < pokemonList.lenght; i++) {
 // } else {
 //   console.log('this is a small pokemon')
 // }
+
+//let pokemonList2 = [
+// different set of Pokémon objects
+//];
