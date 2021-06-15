@@ -29,27 +29,32 @@ var pokemonRepository = (function() {
   //   pokemonRepository.forEach(item)
   // }
   function addListItem(pokemon) {
-    let pokemonList = document.querySelector('.pokemon-list');
-    let listPokemon = document.createElement('li');
-    let button = document.createElement('button');
-    button.innerText = pokemon.name;
-    button.classList.add('button-class');
-    listPokemon.appendChild(button);
-    pokemonList.appendChild(listPokemon);
-
-
+    let pokemonList = document.querySelector('.pokemon-list');//define
+    let listPokemon = document.createElement('li');//create li element
+    let button = document.createElement('button');//create button
+    button.innerText = pokemon.name;//tell each button to have the name on the pokemonList (I defined pokemon with function)
+    button.classList.add('button-class'); //add style to my button
+    listPokemon.appendChild(button); // appen all the li into button
+    pokemonList.appendChild(listPokemon); // define pokemosList as li
+    button.addEventListener('click', function (showDetails) {
+  console.log(showDetails);
+});
   }
+
+function showDetails(pokemon){
+console.log(pokemon);
+}
 
   return { //makes my function public
     getAll: getAll,
     add: add,
-    addListItem: addListItem
+    addListItem: addListItem,
+    showDetails:showDetails,
   };
 })();
 
 console.log(pokemonRepository.getAll());
 
-//
 
 function myLoopFunction(pokemonList) {
   pokemonList.forEach((pokemon, index) => {
@@ -62,4 +67,14 @@ myLoopFunction(pokemonRepository.getAll())
 
 pokemonRepository.getAll().forEach(function(pokemon) {
   pokemonRepository.addListItem(pokemon);
-})
+});
+//
+// function addListItem (showDetails) {
+//   console.log (pokemon, index)
+// };
+// addListItem (pokemon);
+//
+// document.querySelector('.show-more').addEventListener('click', function () {
+//   document.querySelector('.additional-information')
+//     .classList.toggle('is-visible');
+// });

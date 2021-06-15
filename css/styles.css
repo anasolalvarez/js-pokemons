@@ -1,5 +1,4 @@
 .button-class {
-  background-color: #4caf50; /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -11,7 +10,16 @@
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: white;
+  background-color: grey;
   color: black;
-  border: 2px solid #4caf50;
+  border: 2px;
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+h1 {
+  text-align: center;
 }
