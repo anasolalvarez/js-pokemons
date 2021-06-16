@@ -36,9 +36,7 @@ var pokemonRepository = (function() {
     button.classList.add('button-class'); //add style to my button
     listPokemon.appendChild(button); // appen all the li into button
     pokemonList.appendChild(listPokemon); // define pokemosList as li
-    button.addEventListener('click', function (showDetails) {
-  console.log(showDetails);
-});
+    button.addEventListener("click", function(){showDetails(pokemon)})
   }
 
 function showDetails(pokemon){
