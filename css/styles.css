@@ -1,7 +1,7 @@
 
 .button-class {
   position: fixed;
-  border: none;
+   border: none;
   color: white;
   padding: 16px 32px;
   text-align: center;
@@ -10,7 +10,7 @@
   font-size: 16px;
   margin: 4px 2px;
   -webkit-transition-duration: 0.4s;
-  /* Safari */
+  Safari
   transition-duration: 0.4s;
   cursor: pointer;
   background-color: #dce3e9;
@@ -34,7 +34,7 @@ h1 {
 }
 
 /* #modal-container { */
-.button-class{
+/* .button-class{
   position: fixed;
   padding: 20px;
   box-sizing: border-box;
@@ -50,7 +50,7 @@ h1 {
   /* to allow scrolling if the screen is not high enough*/
   overflow: auto;
 
-  /* this is used to center the modal */
+  /* this is used to center the modal*/
   display: grid;
   text-align: center;
 }
@@ -91,5 +91,5 @@ h1 {
 /* #modal-container */
 .button-class.is-visible {
   /* CSS for modal container - add your own desired CSS styles here */
-  display: block;
+  display: block; */
 }
