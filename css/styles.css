@@ -1,90 +1,93 @@
-.button-class {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  background-color: #dce3e9;
-  color: black;
-  border: 2px;
-  width: 90%;
+body {
+    background-color: #ebf916;
+}
+
+nav {
+    width: 100%;
+}
+
+.list-group {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: none;
+    list-style-type: none;
+    grid-gap: 0px;
+    align-content: stretch;
 }
 
 ul {
-  list-style-type: none;
+    padding: 10px;
+    list-style-type: none;
 }
 
 li {
-  display: block;
-  justify-content: center;
-  flex-direction: row;
+    flex: 1 1 0;
+    padding-bottom: 10px;
+    align-items: stretch;
 }
 
-h1 {
-  text-align: center;
+.list-group-item {
+    background-color: #ebf916;
+    border: none;
+    list-style-type: none;
+    align-items: stretch;
 }
 
-#modal-container {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-
-  /* to show it above other content */
-  z-index: 999;
-
-  /* to allow scrolling if the screen is not high enough*/
-  overflow: auto;
-
-  /* this is used to center the modal */
-  display: grid;
-  text-align: center;
+.active,
+.list-group-item:hover {
+    background-color: #ebf916;
 }
 
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: left;
+.btn-primary {
+    padding: 20px;
+    width: 200px;
+    place-self: center stretch;
+    background-color: #f2f6a9;
+    border: none;
+    color: #444347;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 15px;
 }
 
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
+.active,
+.btn-primary:hover {
+    background-color: #666;
+    color: #f91616;
+    border: none;
 }
 
-.modal h1 {
-  margin-top: 0;
+.btn-warning {
+    padding: 5px;
+    background-color: #ebf916;
+    border: none;
 }
 
-.modal p {
-  margin-bottom: 0;
+.btn-success {
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    background: #444347;
+    color: #ebf916;
+    border: none;
 }
 
-#modal-container {
-  display: none;
+.modal-header {
+    background-color: #444347;
+    border: none;
+    text-align: center;
+    justify-content: space-between;
 }
 
-#modal-container.is-visible {
-  /* CSS for modal container - add your own desired CSS styles here */
-  display: block;
+h5 {
+    color: #ebf916;
+    text-transform: capitalize;
+}
+
+.modal-body {
+    background-color: #f2f6a9;
+    border: none;
+    justify-content: center;
+    text-align: center;
 }
