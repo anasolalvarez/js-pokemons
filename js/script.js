@@ -33,13 +33,13 @@ var pokemonRepository = (function () {
         listPokemon.classList.add('list-group-item', 'list-group-item-action')
         let button = document.createElement('button')
         button.innerText = pokemon.name
-        button.classList.add('btn', 'btn-primary')
-        button.setAttribute(
-            'data-target',
-            '#pokemonModal',
-            'data-toggle',
-            'modal'
-        )
+        button.classList.add('btn', 'btn-primary'),
+            button.setAttribute(
+                'data-target',
+                '#pokemonModal',
+                'data-toggle',
+                'modal'
+            )
         pokemonList.appendChild(listPokemon)
         listPokemon.appendChild(button)
         button.addEventListener('click', function () {
